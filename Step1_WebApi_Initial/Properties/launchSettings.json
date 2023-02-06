@@ -9,14 +9,6 @@
     }
   },
   "profiles": {
-    "Step1_WebApi_Initial": {
-      "commandName": "Project",
-      "launchBrowser": true,
-      "applicationUrl": "http://localhost:63392",
-      "environmentVariables": {
-        "ASPNETCORE_ENVIRONMENT": "Development"
-      }
-    },
     "IIS Express": {
       "commandName": "IISExpress",
       "launchBrowser": true,
@@ -25,7 +17,7 @@
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
     },
-    "Step3_WebApi_Jwt": {
+    "Step1_WebApi_Initial": {
       "commandName": "Project",
       "launchBrowser": true,
       "applicationUrl": "https://localhost:41532;http://localhost:48454",
