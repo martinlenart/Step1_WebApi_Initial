@@ -48,5 +48,8 @@ namespace Step1_WebApi_Initial
         public static string CurrentDbType => ConfigurationRoot.GetValue<string>("CurrentDbType");
         public static string CurrentDbConnection => ConfigurationRoot.GetValue<string>("CurrentDbConnection");
         public static string CurrentDbConnectionString => ConfigurationRoot.GetConnectionString(CurrentDbConnection);
+
+        //Example of accessing somthing from User Secret 
+        public static string SecretMessage => ConfigurationRoot.GetValue<string>("SecretMessage");
     }
 }

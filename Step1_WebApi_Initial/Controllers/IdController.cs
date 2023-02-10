@@ -20,7 +20,10 @@ namespace Step1_WebApi_Initial.Controllers
         [ProducesResponseType(200, Type = typeof(WebApiID))]
         public IActionResult Get()
         {
-            return Ok(new WebApiID());
+            var wai = new WebApiID();
+            wai.Version += $"  - {AppConfig.SecretMessage}";
+
+            return Ok(wai);
         }
 
         public IdController(ILogger<IdController> logger)
